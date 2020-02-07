@@ -1,0 +1,24 @@
+#%RAML 1.0
+title: SalesforceMysql
+baseUri:
+description: This API will fetch the information from Salesforce.
+version: v1
+uses:
+  Sales:  Resource/SalesforceDatatype.raml
+
+/Customers:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include Examples/SalasforceData.raml
+
+              
+/CreateCustomer:
+  post:
+    body:
+      application/json:
+        type: Sales.Orders
+        example: !include Examples/SalesforcePost.raml
+                

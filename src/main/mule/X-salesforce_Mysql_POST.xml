@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<sub-flow name="X-salesforce_Mysql_POSTSub_Flow" doc:id="efc2a712-b74c-40cc-b9b3-c57c8bd994bc" >
+		<salesforce:create type="LCustomer__c" doc:name="Create" doc:id="8e52724c-817b-4811-97d3-82d6342dacb8" config-ref="Salesforce_Config"/>
+		<set-payload value="Data Inserted Successfully........" doc:name="Set Payload" doc:id="1a1944e6-1e5b-4ea5-991f-0bb35a829a6c" />
+	</sub-flow>
+</mule>
