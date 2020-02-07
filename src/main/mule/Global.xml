@@ -12,4 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="878a5aed-7cfc-43f1-9646-0cf07f9d6628" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="b1b4c9e2-0bad-450d-ad04-e5558c189cbc" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="enya" database="factory" />
+	</db:config>
 </mule>
